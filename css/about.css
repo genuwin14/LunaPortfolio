@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+#about {
+  background: #f7cfd9;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  min-height: 100vh; /* 🔄 Changed from fixed height to min-height */
+}
+
+#about h2 {
+  font-size: 5rem;
+  color: #f27a95;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+  font-family: 'Fredoka', sans-serif;
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #000;
+}
+
+.luna-img-transparent {
+  max-height: 600px;
+  border-radius: 0; /* Remove corner rounding */
+  filter: drop-shadow(0 0 10px #f27a95); /* Pink glow */
+  -webkit-filter: drop-shadow(0 0 10px #f27a95);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Optional hover effect */
+.luna-img-transparent:hover {
+  transform: scale(1.03);
+}
+
+/* 🧠 Responsive Tweaks */
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column; /* Stack if needed */
+    padding: 80px 20px; /* More breathing room */
+  }
+
+  #about h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #about p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  #about img {
+    max-height: 300px;
+    margin-top: 30px;
+  }
+}

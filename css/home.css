@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+#home {
+  height: 100vh;
+  background-color: #f2a4b7;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+
+#home .content {
+  z-index: 10;
+  position: relative;
+}
+
+.blur-circle {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.blur-circle-two {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.blur-circle.top-left {
+  top: 20px;
+  right: 300px;
+  background-color: #d1aadd;
+}
+
+.blur-circle-two.top-left-two {
+  top: 200px;
+  right: 50px;
+  background-color: #f7cad5;
+}
+
+.blur-circle.bottom-right {
+  bottom: 100px;
+  left: 50px;
+  background-color: #d1aadd;
+}
+
+.blur-circle-two.bottom-right-two {
+  bottom: 50px;
+  left: 350px;
+  background-color: #f7cad5;
+}
+
+.content h5 {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  font-family: 'Fredoka', sans-serif;
+}
+
+.content a {
+  margin-top: 50px;
+  display: inline-block; /* ✅ This is the magic */
+}
+
+.btn-email {
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.6rem;
+}
+
+.btn-email:hover {
+    background-color: none;
+    color: #000;
+    border: 2px solid #000;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  #home {
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  #home .content h5 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  #home .content p {
+    font-size: 1rem;
+    color: #000;
+    margin-top: 15px;
+  }
+
+  .btn-email {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+
+  /* Adjust blur circle sizes for smaller screens */
+  .blur-circle,
+  .blur-circle-two {
+    width: 200px;
+    height: 200px;
+    filter: blur(25px);
+    opacity: 0.5;
+  }
+
+  .blur-circle.top-left {
+    top: 20px;
+    right: 50px;
+  }
+
+  .blur-circle-two.top-left-two {
+    top: 150px;
+    right: 10px;
+  }
+
+  .blur-circle.bottom-right {
+    bottom: 100px;
+    left: 10px;
+  }
+
+  .blur-circle-two.bottom-right-two {
+    bottom: 50px;
+    left: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  #home .content h5 {
+    font-size: 3rem;
+  }
+
+  .btn-email {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}

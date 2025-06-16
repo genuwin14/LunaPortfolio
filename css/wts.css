@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+#whattheysay {
+  background: #f4cad8;
+  padding: 100px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#whattheysay .heading-text {
+  font-size: 5rem;
+  color: #797575;
+  font-family: 'Fredoka', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+#whattheysay .testimonial {
+  margin-bottom: 10px;
+  padding: 20px 25px;
+  border-radius: 12px;
+}
+
+#whattheysay .testimonial strong {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+#whattheysay .testimonial p {
+  font-size: 1.2rem;
+  color: #000;
+  line-height: 1.;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  #whattheysay {
+    padding: 60px 20px;
+  }
+
+  #whattheysay .heading-text {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  #whattheysay .testimonial {
+    padding: 15px 20px;
+  }
+}

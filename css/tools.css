@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+#tools {
+  background: #f2a4b7;
+  padding: 70px 0;
+}
+
+#tools h2 {
+  font-size: 5rem;
+  color: #fff;
+  font-family: 'Fredoka', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.tool-icon {
+  max-width: 80px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.tool-icon:hover {
+  transform: scale(1.1);
+}
+
+/* ✅ This creates the staggered effect */
+.offset-row {
+  margin-left: 7%;
+}
+
+.offset-row-two {
+    margin-right: 7%;
+}
+
+@media (max-width: 768px) {
+  .offset-row {
+    margin-left: 0;
+  }
+  
+  #tools h2 {
+    font-size: 2rem;
+  }
+}
